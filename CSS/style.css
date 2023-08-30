@@ -1,0 +1,111 @@
+/* fontes importadas do google fonts 
+font-family: 'Righteous', cursive;
+font-family: 'Sarala', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+
+/*reset de formatação css*/
+*{ 
+    margin: 0;/*A propriedade margin do CSS define a área de margem nos quatro lados do elemento */
+    padding:0;/* distancia da tag e o conteúdo dela */
+    box-sizing: border-box;/*faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura.*/
+    text-decoration: none;/*remove qualquer decoração do texto, sublinhados, cor azuis */
+}
+
+body{
+   
+    font-size: 100%;
+    background: #FF007F/* deixa o fundo gradiente*/
+
+}
+
+.cabecalho{
+    display: flex;/*deixa o conteudo da tag na horizontal */
+    flex-direction: row; /* deixa o conteudo da tag na horizontal, reforçando o display flex */
+    align-items: center;/*centraliza os itens, nesta caso alinha os itens da nav assim também como o logo*/
+    justify-content: space-around;/*gera uma borda nas laterais da classe assim também como um espaçamento entre o logo e a nav*/
+    padding: 24px;
+    background:#d41273 ;
+}
+
+/*logo */
+.cabecalho-imagem{
+height: 100px;
+border-radius: 55%;
+
+}
+/* nav*/
+.cabecalho-menu{
+    display: flex;
+    gap: 32px;
+    
+}
+.cabecalho-menu-item{
+
+    font-family: 'Sarala', sans-serif;
+    color: rgba(255, 242, 231, 1);
+    font-weight: 400;
+    font-size: 18px;
+    
+    
+}
+
+
+.conteudo{
+    border-top: 0.4px solid #FFF2E7; /* um traço , tamanho, que tipo e cor*/
+    margin-bottom: 48px;
+
+}
+
+
+ .conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+   
+    
+  }
+
+/*container da animação */
+  .container{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   
+  
+      
+
+  }
+
+  /*texto adriana guedes */
+
+  h2{
+    color: #FFF2E7;
+    text-align: center;
+    font-size: 6vw;
+    line-height: 1em;
+    z-index: 1000;
+    font-weight: 900;
+    font-family:'Righteous', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  }
+
+
+
+
+
+  .block{
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    background-color: #FF007F ;
+    box-shadow: 10px 10px 50px rgba(0,0,0,0.2);
+    
+    
+  }
+
+
+

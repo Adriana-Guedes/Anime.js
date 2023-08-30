@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <!--  INDICA QUE PODEMOS ADAPTAR O CODIGO A OUTROS DISPOSITIVOS, COMO DISPOSITIVOS MOVEIS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!--  DESCRIÇÃO QUE APARECE ABAIXO DO TITULO PESQUISADO NO GOOGLE-->
+    <meta name = "description" content="Um bot que ira moderar e deixar a sua comunidade segura de um jeito fácil!">
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <title>Adriana Guedes</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="/imagens/dri2.jpg" alt="foto Adriana Guedes">
+        <nav class="cabecalho-menu">
+           
+            <a class="cabecalho-menu-item" href="https://www.linkedin.com/in/adriana-guedes-4b3401150/" target="_blanck">Linkedin</a>
+            <a class="cabecalho-menu-item" href="https://github.com/Adriana-Guedes" target="_blanck" >Github </a>
+
+            
+                    
+        </nav>
+   
+    </header>
+  
+     
+        <div class="container">
+            <h2><span>Adriana Guedes</span></Adriana></h2>
+         </div>
+  
+
+
+
+
+    <script src="anime.min.js"></script>
+    <script>
+        
+    const container = document.querySelector('.container')
+    //aqui serão criados as divs na quantidade informada para termino do laço
+  
+    for (var i = 0; i <= 100; i++){
+        const blocks = document.createElement('div');
+        blocks.classList.add('block');
+        container.appendChild(blocks); //vai criar varias divs com class blocks 
+    }
+
+    function animateBlocks(){
+        anime({
+            targets: '.block',
+            translateX: function(){
+                return anime.random(-700,700)
+            },
+            translateY: function(){
+                return anime.random(-500,500)
+            },
+            scale: function(){
+                return anime.random(1,5)
+            },
+            easing: 'linear',
+            duration: 3000,
+            delay: anime.stagger(10),
+            complete:animateBlocks,
+           
+        })
+
+    }
+    animateBlocks()
+
+</script>
+
+</body>
+</html>
