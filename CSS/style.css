@@ -8,16 +8,16 @@ font-family: 'Sarala', sans-serif;*/
     margin: 0;/*A propriedade margin do CSS define a área de margem nos quatro lados do elemento */
     padding:0;/* distancia da tag e o conteúdo dela */
     box-sizing: border-box;/*faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura.*/
-    text-decoration: none;/*remove qualquer decoração do texto, sublinhados, cor azuis */
+    text-decoration: none;/*remove qualquer decoração do texto, sublinhados, cor azuis */   
 }
+
 
 body{
    
     font-size: 100%;
     background: #FF007F;/* deixa o fundo gradiente*/
-    
-
 }
+
 
 .cabecalho{
     display: flex;/*deixa o conteudo da tag na horizontal */
@@ -26,12 +26,18 @@ body{
     justify-content: space-around;/*gera uma borda nas laterais da classe assim também como um espaçamento entre o logo e a nav*/
     padding: 24px;
     background:#d41273;
+    z-index: 1;
+    box-shadow: 15px 15px 40px rgba(0,0,0,0.5);
+      
 }
+
 
 /*logo */
 .cabecalho-imagem{
 height: 100px;
 border-radius: 55%;
+
+
 
 }
 /* nav*/
@@ -39,8 +45,10 @@ border-radius: 55%;
     display: flex;
     gap: 32px;
     
-    
+       
 }
+
+
 .cabecalho-menu-item{
 
     font-family: 'Sarala', sans-serif;
@@ -53,15 +61,16 @@ border-radius: 55%;
     
 }
 
-/*traço embaixo do itens do nav bar */
+/*traço embaixo do itens do nav bar / pseudo elmento */
 .cabecalho-menu-item::after{
   content: " ";
   width: 0%; /*para esconder o elemento */
   height: 4px;
-  background-color:#db8db5;
+  background-color:#dda7c3;
   position: absolute;
   bottom: 0;
   left: 0;
+  transition: 0.5s ease-in-out;
   
   
 }
@@ -96,6 +105,7 @@ border-radius: 55%;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    
      
 
   }
@@ -132,9 +142,10 @@ border-radius: 55%;
 
 
   @media screen and (max-width:700px){
+   
     h2{
      font-size: 10vw;
-     margin-top: -100px;
+     margin-top: -180px;
      
     }
    
